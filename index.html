@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Practrica JS</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script> 
+                
+                
+                
+
+                //Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+                    //salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión
+                    var frase;
+                    var frases = [];
+
+            do {
+                frase = prompt("iNGRESE LA FRASE: ","").toLowerCase();
+                if(frase !== "cancelar"){
+                    frases.push(frase);
+                }
+            }while(frase !== "cancelar");
+                  
+
+            document.write("Palabras cargadas : <br> ")
+            for(i = 0 ; i<frases.length;i++){
+                document.write(frases[i]+" - ")
+            }
+
+
+                    
+
+
+
+                
+                /* Pide una nota (número). Muestra la calificación según la nota:
+                        ● 0-3: Muy deficiente
+                        ● 3-5: Insuficiente
+                        ● 5-6: Suficiente
+                        ● 6-7: Bien
+                        ● 7-9: Notable
+                        ● 9-10: Sobresalient*/
+                                        
+            /*    var numero = parseInt(prompt("Ingresa el número por favor", ""));
+              
+                    if(numero === 1 || numero === 2 || numero === 3){
+                        document.write("Muy deficiente");
+                    }else if(numero === 4 || numero === 5 || numero === 6){
+                        document.write("Insuficiente");   
+                    }else if(numero ===7){
+                        document.write("Suficiente")
+                    }else if (numero ===10){
+
+                        document.write("Sobresaliente")
+                    }
+    */
+                
+                
+
+
+
+              /*  var numero = parseInt(prompt("Ingresa el número por favor", ""));
+
+                for (var i = 0; i < 10; i ++){
+
+                    if(numero % i == 0){
+                        document.write("El numero es divisible por  : " + i+ "<br>");
+                    }
+
+                }
+/*
+
+        /* var numero = parseInt(prompt("Ingresa el número por favor", ""));
+     
+        if (numero % 2 == 0) {
+            document.write("Es divisible por 2<br>");
+        }
+        
+        if (numero % 3 == 0) {
+            document.write("Es divisible por 3<br>");
+        }
+        
+        if (numero % 5 == 0) {
+            document.write("Es divisible por 5<br>");
+        }
+        
+        if (numero % 7 == 0) {
+            document.write("Es divisible por 7<br>");
+        }*/
+    </script>
+    
+    
+  
+
+
+
+    <!--<script> 
+        var frase =prompt("ingresa la frase por favor " , "");
+        var contadorA = 0;
+        var contadorE = 0;
+        var contadorI = 0;
+        var contadorO = 0;
+        var contadorU = 0;
+
+        for (var i = 0; i < frase.length; i++) {
+            var letraActual = frase.charAt(i);
+            switch (letraActual) {
+            case "a":
+                contadorA++;
+                break;
+            case "e":
+                contadorE++;
+                break;
+            case "i":
+                contadorI++;
+                break;
+            case "o":
+                contadorO++;
+                break;
+            case "u":
+                contadorU++;
+                break;
+        }
+    }
+        
+    document.write("Aparecen las siguientes vocales en la frase: <br>");
+    document.write("A: " + contadorA + " veces <br>");
+    document.write("E: " + contadorE + " veces <br>");
+    document.write("I: " + contadorI + " veces <br>");
+    document.write("O: " + contadorO + " veces <br>");
+    document.write("U: " + contadorU + " veces");
+    
+    </script>-->
+
+
+   <!-- <script>
+        var frase = prompt("Ingresa la frase por favor", "").toLowerCase();
+     ;
+        var contadorVocales =0;
+    
+        for (var i = 0; i < frase.length; i++) {
+            var letraActual = frase.charAt(i);
+            
+            switch (letraActual) {
+                case "a":
+                case "e":
+                case "i":
+                case "o":
+                case "u":
+                  //  vocales.push(letraActual);
+                  contadorVocales++;
+                  break;
+            }
+        }
+    
+        document.write("LAS VOCALES ENCONTRADAS SON: <br> "+ contadorVocales);
+    
+        //if (vocales.length > 0) {
+         //   var vocalesEncontradas = vocales.join(", ");
+           // document.write(contadorVocales);
+        //} else {
+           // document.write("No se encontraron vocales.");
+       // }
+    </script>-->
+    
+
+        
+
+
+       
+        
+   
+
+
+    <!--<script >
+            var num = parseInt(prompt("ingresa el numero : "," "))
+
+           var parOno = num % 2 ==0 ? "Es divisible por 2 " : "El numero no es divisible por 2";
+
+           document.write(parOno);
+
+    </script>-->
+   <!--   <script> 
+        var num1 = parseInt(prompt("Ingresa el numero 1 : ", " "))
+        var num2 = parseInt(prompt("Ingresa el numero 2 : ", " "))
+
+        if(num1 > num2){
+            document.write("El numero mayor es el primero de los dos ");
+        }else{
+            document.write("El numero mayor es el segundo de los dos ");
+
+        }
+
+
+    </script>-->
+
+
+
+
+   <!-- <script >
+        var nombre = prompt("Cual es tu nombre "," ");
+        document.write("hola estimado " + nombre)
+    </script>-->
+
+   <!-- <script>
+        document.write("3 + 5 es = " + (3+5));
+    </script>-->
+
+  <!-- <script>
+       // alert("Hello, world!");  Ejercicio 1|
+        var dato1 = parseInt(prompt("Ingresa el primer valor : "," "))
+        var dato2 = parseInt(prompt("Ingresa el segundo valor : "," "))
+        resultado = dato1 + dato2;
+       document.write("El resultado de la suma de ambos datos es: "+ (resultado))
+    </script>-->
+</body>
+</html>
