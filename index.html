@@ -14,14 +14,133 @@
 
 
 
-    <script> 
+    <body> 
+            <script>   
+
+                /* 
+                25. Un script que escriba los números del 1 al 500, que indique cuáles son
+                múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
+
+                */
+
+                for (var i = 0; i <=500;i++) { 
+                    
+                       if(i % 4 === 0){
+                        document.write(i + " (Multiplo de 4 )<br> ");
+                       } else if(i % 9 === 0 ){
+                        document.write(i + " (Multiplo de 9 )<br>");
+                       }else if(i % 5 === 0){
+                     
+                        document.write("___________________________________");
+                      
+                       }
+                       document.write(i);
+                }
+
+
+               /* 23. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma : 1
+22
+333
+4444
+55555
+666666
+
+*/
+                    
+           /* let numero =  parseInt(prompt("ingresa un numero " ," "));
+
+            for (let i = numero; i >= 0; i--){
+                    for (let j = 0; j<i ; j++) {
+                    
+                        document.write(i);
+                    }
+                    document.write("<br>");
+            }*/
+
+                /*23. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma : 1
+22
+333
+4444*/
+
+
+                             /*   for (var i = 1; i <= 30; i++) {
+                                var x = 0;
+                                do {
+                                    document.write(i + " ");
+                                    x++;
+                                } while (x !== i);
+                                document.write("<br>");
+                                }
+
+                                        */
+
+
+             /*   2. Realizar una página con un script que calcule el valor de la letra de un número
+                        de DNI (Documento Nacional de Identidad).
+                        El algoritmo para calcular la letra del dni es el siguiente :
+                        ● El número debe ser entre 0 y 99999999
+                        ● Debemos calcular el resto de la división entera entre el número y el número
+                        23.
+                        ● Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:
+                        (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)
+                        ● Si lo introducido no es un número deberá indicarse con un alert y volver a
+                        preguntar.
+                        ● Deberá de repetirse el proceso hasta que el usuario pulse «cancelar»*/
+
+
+                                                //    var numeroDNI;
+                          /*   var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+
+                            do {
+                            numeroDNI = prompt("Ingresa el número de DNI (entre 0 y 99999999):", "");
+
+                            if (numeroDNI !== null && numeroDNI !== "") {
+                                if (!isNaN(numeroDNI) && parseInt(numeroDNI) >= 0 && parseInt(numeroDNI) <= 99999999) {
+                                var resto = parseInt(numeroDNI) % 23;
+                                var letra = letras[resto];
+                                alert("La letra correspondiente al número de DNI " + numeroDNI + " es: " + letra);
+                                } else {
+                                alert("El valor ingresado no es un número válido o está fuera del rango permitido.");
+                                }
+                            }
+                            } while (numeroDNI !== null && numeroDNI !== "");
+*/
+
+
+<script>
+
+
+
+                //21. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
+                //número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
+                 // deberá indicarse la suma total de los números introducidos
                 
-                
-                
+
+
+                 /*
+
+                 var sumaNum = 0;
+                var num;
+
+                do {
+                num = prompt("Ingresa un número o escribe 'cancelar' para finalizar", "");
+
+                if (num !== null && num !== "" && num.toLowerCase() !== "cancelar") {
+                    if (!isNaN(num)) {
+                    sumaNum += parseInt(num);
+                    } else {
+                    alert("No ingresaste un número válido");
+                    }
+                }
+                } while (num !== null && num !== "" && num.toLowerCase() !== "cancelar");
+
+                alert("La suma de los números es: " + sumaNum);
+                    
+*/
 
                 //Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
                     //salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión
-                    var frase;
+              /*      var numero;
                     var frases = [];
 
             do {
@@ -38,7 +157,7 @@
             }
 
 
-                    
+                    */
 
 
 
@@ -63,7 +182,8 @@
 
                         document.write("Sobresaliente")
                     }
-    */
+                        
+
                 
                 
 
@@ -80,30 +200,8 @@
                 }
 /*
 
-        /* var numero = parseInt(prompt("Ingresa el número por favor", ""));
-     
-        if (numero % 2 == 0) {
-            document.write("Es divisible por 2<br>");
-        }
-        
-        if (numero % 3 == 0) {
-            document.write("Es divisible por 3<br>");
-        }
-        
-        if (numero % 5 == 0) {
-            document.write("Es divisible por 5<br>");
-        }
-        
-        if (numero % 7 == 0) {
-            document.write("Es divisible por 7<br>");
-        }*/
-    </script>
-    
-    
-  
 
-
-
+<!--  -->
     <!--<script> 
         var frase =prompt("ingresa la frase por favor " , "");
         var contadorA = 0;
@@ -133,17 +231,17 @@
         }
     }
         
+    
     document.write("Aparecen las siguientes vocales en la frase: <br>");
     document.write("A: " + contadorA + " veces <br>");
     document.write("E: " + contadorE + " veces <br>");
     document.write("I: " + contadorI + " veces <br>");
     document.write("O: " + contadorO + " veces <br>");
     document.write("U: " + contadorU + " veces");
-    
-    </script>-->
 
 
-   <!-- <script>
+-->
+   <!-- <scrip>
         var frase = prompt("Ingresa la frase por favor", "").toLowerCase();
      ;
         var contadorVocales =0;
@@ -171,8 +269,7 @@
         //} else {
            // document.write("No se encontraron vocales.");
        // }
-    </script>-->
-    
+        
 
         
 
@@ -189,8 +286,7 @@
 
            document.write(parOno);
 
-    </script>-->
-   <!--   <script> 
+    
         var num1 = parseInt(prompt("Ingresa el numero 1 : ", " "))
         var num2 = parseInt(prompt("Ingresa el numero 2 : ", " "))
 
@@ -202,7 +298,7 @@
         }
 
 
-    </script>-->
+  
 
 
 
@@ -210,11 +306,11 @@
    <!-- <script >
         var nombre = prompt("Cual es tu nombre "," ");
         document.write("hola estimado " + nombre)
-    </script>-->
+ 
 
    <!-- <script>
         document.write("3 + 5 es = " + (3+5));
-    </script>-->
+
 
   <!-- <script>
        // alert("Hello, world!");  Ejercicio 1|
@@ -222,6 +318,11 @@
         var dato2 = parseInt(prompt("Ingresa el segundo valor : "," "))
         resultado = dato1 + dato2;
        document.write("El resultado de la suma de ambos datos es: "+ (resultado))
-    </script>-->
+-->*/
+
+</script>
+
+
+
 </body>
 </html>
