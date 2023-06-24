@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creando Elementos con createElement</title>
+</head>
+<body>
+
+
+        <h2>Cambiando imagenes con JS</h2>
+
+        <button onclick="cambiarLogo()">Cambiar Logo</button>
+
+
+    <script >
+
+            const img = document.createElement("img");
+            img.src = "https://i.ytimg.com/vi/tWQYLxXp6hU/maxresdefault.jpg"
+            img.alt = "Logo"
+            img.width ="400";
+            document.body.appendChild(img)
+        
+        
+        
+        function cambiarLogo(){
+            var nombreLogo = img.src
+            if(nombreLogo  == "https://i.ytimg.com/vi/tWQYLxXp6hU/maxresdefault.jpg"){
+                img.src = "https://igmmotos.com/wp-content/uploads/2023/04/igm-categoria-motos-on-off.webp"
+            }else{
+                img.src = "https://i.ytimg.com/vi/tWQYLxXp6hU/maxresdefault.jpg" 
+            }
+        }
+
+    </script>
+</body>
+</html>

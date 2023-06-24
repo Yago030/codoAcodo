@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <h1>cargando edades</h1>
+
+
+
+
+    <script >
+/*
+        var edades = [];
+
+        function agregarEdades (){
+            for (var i = 0; i < 10; i++){
+                var edad = parseInt(prompt("Ingresa la edad ", "" ));
+                edades.push(edad);
+            }
+
+            
+        }
+
+
+        function mostrarEdades(){
+            for (var i = 0; i < edades.length; i++){
+                if (edades[i] % 2 === 0){
+                    document.write("El numero es par:   " + edades[i] + " <br/>");
+                }
+
+                
+            }
+
+            document.write ("<br> La edad mas baja es "+ (Math.min(...edades)))
+            document.write ("<br> La edad mas alta  es "+ (Math.max(...edades)))
+        }
+
+
+        function buscarPorIndice (){
+            prompt("Hola" );
+                var indice = parseInt(prompt("Buscar por el indce :_", "" ));
+                for (var i = 0; i < edades.length ; i++) {
+                    if ( i === indice ) {
+                        document.write("<br> El elemento encontrado en el indice  "+ indice +" es " + edades[i] + " <br/>");
+                    }
+                }
+        }
+
+
+        /* Ejercicio 6: Escriba una función que reciba una array y solo imprima los
+valores que se repiten. Por ejemplo, dada la siguiente array e índice, la
+función imprimirá '6,23,33,100' 
+            function obtenerElementosRepetidos(array) {
+                var elementosRepetidos = [];
+                
+                array.forEach(function(elemento, indice) {
+                if (array.indexOf(elemento, indice + 1) !== -1 && elementosRepetidos.indexOf(elemento) === -1) {
+                    elementosRepetidos.push(elemento);
+                }
+                });
+                
+                return elementosRepetidos;
+  }
+*/
+
+                function unirElementosCadena(array){
+                    return array.join(" "); //utiliza una coma para unir element
+
+                }
+
+                var miArray = ["Red", "Green", "White", "Black"];
+
+
+
+                unirElementosCadena(miArray);
+
+                document.write(miArray);
+
+/*
+
+        agregarEdades();
+        mostrarEdades();
+        buscarPorIndice();
+        tieneElementosRepetidos(edades);
+
+*/
+
+
+
+
+    </script>
+</body>
+</html>

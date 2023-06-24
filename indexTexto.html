@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getElementsByClassName()</h1>
+    <p>Retorna un array de objetos que pueden existir multiples elementos de una clase</p>
+
+    <hr>
+
+    <div class="ejemplo">Primer elemento div con clase = "ejemplo" .</div>
+    <div class="ejemplo">Primer elemento div con clase = "ejemplo" .</div>
+    <div class="ejemplo">Primer elemento div con clase = "ejemplo" .</div>
+
+    <p>Haga click en los botones para cambiar el texto del primer elemento div con la clase "ejemplo" </p>
+
+    <button onclick="cambiarTexto()">cambiar  un  parrafo</button>
+    <button onclick="cambiarTextoDos()">cambiar  todos los   parrafos</button>
+    
+    
+    <hr>
+    <H2>getElementsByName</H2>
+
+    <form>
+        apellido: <input name="fname" type="text" value="Perez">
+        <span id="demo"></span>
+        nombre: <input name="fname" type="text" value="Juan">
+        <span id="demo2"></span>
+    </form>
+    <br>
+    <button onclick="obtenerTag()">TagName</button>
+    <button onclick="obtenerValor()">Value</button>
+    <button onclick="validarValor()">Validar Nombre</button>
+    <span id="validar"></span>
+
+
+    <hr>
+    <H2>getElementsByTagName</H2>
+    <ol>
+        <li>Cafe</li>
+        <li>Te</li>
+        <li>Leche</li>
+    </ol>
+    ¿Que elemento desea? (1,2 ,3 ): 
+    <input id="seleccion" type="number" min =1 max=3 >
+    <button onclick="obtenerElemento()">Obtener elemento</button>
+    <p id="demo3"></p>
+
+    <hr>
+    <H2>querySelector</H2>
+    <p class="ejemplo2">Parrafo con clase "ejemplo".</p>
+
+    <button class="boton" onclick="agregarFondo()">Agregar fondo</button>
+    <button class="boton" onclick="agregarFondo()">Agregar fondo2</button>
+
+    <hr>
+    <H2>querySelectorAll</H2>
+
+    <h2 class="subtitulo">Subtitulo</h2>
+    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, quas assumenda? Neque ipsum iste optio doloribus aut, laboriosam provident quibusdam, accusamus, eum officiis quas quisquam asperiores consectetur consequatur inventore tenetur?</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate cupiditate officiis ipsam in vitae nobis temporibus, beatae soluta porro ipsum officia. Vero consectetur blanditiis quam voluptatum, mollitia at illo?</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta harum reprehenderit necessitatibus nobis consectetur praesentium id accusantium excepturi voluptate repellendus tempora quas, facere voluptas neque commodi dolores inventore veritatis. Quisquam.</p>
+    
+    <h2 class="subtitulo">Otro Subtitulo</h2>
+    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, quas assumenda? Neque ipsum iste optio doloribus aut, laboriosam provident quibusdam, accusamus, eum officiis quas quisquam asperiores consectetur consequatur inventore tenetur?</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate cupiditate officiis ipsam in vitae nobis temporibus, beatae soluta porro ipsum officia. Vero consectetur blanditiis quam voluptatum, mollitia at illo?</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta harum reprehenderit necessitatibus nobis consectetur praesentium id accusantium excepturi voluptate repellendus tempora quas, facere voluptas neque commodi dolores inventore veritatis. Quisquam.</p>
+    
+    <button onclick="pintar()">Pintar</button>
+    
+    <button onclick="pintarAleatorio()">Pintar Aleatorio</button>
+
+    <script src="onlclick.js">
+
+
+        
+
+    </script>
+</body>
+</html>
